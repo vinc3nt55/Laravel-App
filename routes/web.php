@@ -18,3 +18,11 @@ Route::get('/company', 'PagesController@company');
 Route::get('/employee', 'PagesController@employee');
 
 Route::resource('posts', 'PostsController');
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index');
+
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index');
+
